@@ -4,7 +4,7 @@ import gleam/io
 
 pub fn main() {
   case argv.load().arguments {
-    ["test", a, b] -> exercise_test.run_test(a, b)
+    ["test"] -> exercise_test.run_test()
     _ -> io.println("Usage: vars get <name>")
   }
 }
